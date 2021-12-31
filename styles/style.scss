@@ -1,0 +1,37 @@
+@mixin text {
+    text-align: center;
+    padding-top: 10px;
+}
+@mixin width {
+    width: 400px;
+}
+body {
+    h1 {
+        @include text();
+    }
+    #footer1 {
+        margin-top: 170px;
+    }
+    
+    .card-img-top, .card-img-bottom {
+        @include width();
+        height: 300px;
+    }
+    .card-img-top {
+        margin-top: 20px;
+    }
+    .card-img-bottom {
+        margin-bottom: 20px;
+    }
+    #pic1 {
+        @include width();
+        height: 500px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+    
+}
